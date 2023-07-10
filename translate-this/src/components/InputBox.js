@@ -1,13 +1,16 @@
 import "../styles.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import TranslatorInput from "./TranslatorInput";
 import LoadingGif from "../assets/Loading.gif"
 
+//This component allows users to input text of their choice and saves the most recent text submitted when user presses "Translate"
 function InputBox(props) {
+  //State management
   const [showInputBox, setShowInputBox] = useState(true)
   const [loading, setLoading] = useState(false);
   const [freeInput, setFreeInput] = useState("");
 
+  //When user presses Translate button their most recent submitted input is saved to localStorage
   function saveInput() {
     var val = localStorage.getItem("input")
     if (val) {
@@ -18,6 +21,7 @@ function InputBox(props) {
     }
   }
 
+//Toggles display of this component
   function handleInputBox() {
     if (showInputBox) {
       setShowInputBox(false)
@@ -26,6 +30,7 @@ function InputBox(props) {
     }
   }
 
+  //When user types into input box, input variable changes
   function handleInputChange(event) {
     setFreeInput(event.target.value)
   };

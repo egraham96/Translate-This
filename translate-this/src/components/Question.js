@@ -3,11 +3,14 @@ import { useState } from "react";
 import InputBox from "./InputBox";
 import JokeBox from "./JokeBox";
 
+//This component asks user whether they want to translate text they submitted themselves or get a joke from JokeAPI they can translate
 function Question(props) {
+  //State management
   const [showQuestion, setShowQuestion] = useState(true);
   const [inputText, setInputTextBox] = useState(false);
   const [getJoke, setJokeBox] = useState(false);
 
+  
   const handleInputText = () => {
     if (inputText === false) {
       setShowQuestion(false);

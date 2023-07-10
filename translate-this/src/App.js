@@ -4,12 +4,13 @@ import Header from "./components/Header";
 import LoganGreeter from "./components/LoganGreeter";
 import Footer from "./components/Footer";
 
-
+//App component
 function App() {
+  //State management
   const [showFooterButton, setShowFooterButton] = useState(true);
   const [showFooter, setShowFooter] = useState(false)
 
-
+//Toggles the footer component
   const handleFooter = () => {
     if (showFooter) {
       setShowFooter(false)
@@ -30,7 +31,8 @@ function App() {
         <span className="border br"></span>
         {showFooter ? (<Footer handleFooter={handleFooter}></Footer>) : (<LoganGreeter></LoganGreeter>)}
       </div>
-      <div className="footer-box" style={{ marginTop: "80px", backgroundColor: "#CCDAD1",  position:"relative" }}>
+      <div className="footer-box" style={{ marginTop: "80px", backgroundColor: "#CCDAD1", position: "relative" }}>
+       {/* Toggles whether footer button is shown */}
         {showFooterButton ?
           (<button
             onClick={handleFooter}

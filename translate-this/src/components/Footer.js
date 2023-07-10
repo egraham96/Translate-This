@@ -1,6 +1,7 @@
 import "../styles.css";
 import Prime from "../assets/Prime.png"
 
+//Footer component
 function Footer(props) {
   return (
     <div

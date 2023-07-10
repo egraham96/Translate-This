@@ -3,20 +3,22 @@ import { useState } from "react";
 import Logan from "../assets/Logan.png";
 import Question from "./Question";
 
-
+//This component greets the user upon opening the application
 function LoganGreeter() {
+  //State management
   const [showLogan, setShowLogan] = useState(true);
 
+  //Toggles whether this component is displayed
   const handleLogan = () => {
-    if (showLogan){
-    setShowLogan(false)
-     } else {
+    if (showLogan) {
+      setShowLogan(false)
+    } else {
       setShowLogan(true)
-  };
-}
+    };
+  }
 
-      return (
-        <>
+  return (
+    <>
       {showLogan ? (
         <div>
           <img

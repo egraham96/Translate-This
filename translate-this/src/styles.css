@@ -119,10 +119,10 @@
   top: -80px;
 }
 
-@media screen and (min-height:800px){
-  .footer-box{
+@media screen and (min-height:800px) {
+  .footer-box {
     position: absolute;
-    bottom:0;
-    width:100%;
+    bottom: 0;
+    width: 100%;
   }
 }
