@@ -6,7 +6,7 @@ This app utilizes the JokeAPI (https://sv443.net/jokeapi/v2/) and LibreTranslate
 
 ## Design Decisions
 
-The first design decision I made was to make my application using React and JavaScript. I considered using TypeScript because I like the strict type settings but ultimately went with JavaScript for times' sake. I decided to use React because I find it one of the easiest frontend frameworks to work with, and I like the ease of deploying React apps. Additionally, React makes it very easy to make Single Page Applications, which I figured would be sufficient for the requirements of the challenge.
+The first design decision I made was to make my application using React and JavaScript. I considered using TypeScript because I like the strict type settings but ultimately went with JavaScript for the sake of time. I decided to use React because I find it one of the easiest frontend frameworks to work with, and I like the ease of deploying React apps. Additionally, React makes it very easy to make Single Page Applications, which I figured would be sufficient for the requirements of the challenge.
 
 Next, I decided to make my application Logan Paul themed. I did this upon learning that Logan was Aview International's first client. I then decided to use the JokeAPI to allow users to choose a joke input for later translating. I also included a feature that allows users to input text of their choice to be translated. I did this as a bonus option. I also decided to only allow users to translate from English into 16 specific languages (see above). These 16 languages are the same languages that Aview International offers its clients. 
 
